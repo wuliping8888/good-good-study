@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            background-color: black;
+            perspective: 500px;
+        }
+        ul{
+            list-style: none;
+            width: 200px;
+            height: 300px;
+            border: 1px solid gold;
+            box-shadow: 0px 0px 5px gold;
+            margin: 150px auto;
+            background-color:white;
+            transition: all 1s ;
+            transform-style: preserve-3d;
+            position: relative;
+        }
+        ul:hover{
+            transform-origin: bottom;
+            transform: rotateX(60deg);
+        }
+        ul li{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            transform-origin: left;
+            transition: all 1s;
+        }
+        li:nth-child(5){
+            background-color: hotpink;
+        }
+        li:nth-child(4){
+            background-color:yellow;
+        }
+        li:nth-child(3){
+            background-color:skyblue;
+        }
+        li:nth-child(2){
+            background-color:purple;
+        }
+        li:nth-child(1){
+            background-color:seagreen;
+        }
+        ul:hover li:nth-child(5){
+            transition: all 1s 1s;
+            transform: rotateY(-170deg);
+        }
+        ul:hover li:nth-child(4){
+            transition: all 1s 2s;
+            transform: rotateY(-150deg);
+        }
+        ul:hover li:nth-child(3){
+            transition: all 1s 3s;
+            transform: rotateY(-130deg);
+        }
+        ul:hover li:nth-child(2){
+            transition: all 1s 4s;
+            transform: rotateY(-110deg);
+        }
+        ul:hover li:nth-child(1){
+            transition: all 1s 5s;
+            transform: rotateY(-90deg);
+        }
+    </style>
+</head>
+<body>
+    <h2>这是一个寂寞的天,下着有些伤心的雨</h2>
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+</body>
+</html>
+
